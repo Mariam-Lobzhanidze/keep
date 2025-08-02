@@ -1,0 +1,16 @@
+name: Keep Alive
+
+on:
+  schedule:
+    - cron:  '*/15 * * * *'  # Every 15 minutes
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping all my apps
+        run: |
+          curl -s https://pet-adoption-backend-u907.onrender.com/health
+          curl -s https://movies-backend-0nkv.onrender.com/health
+         
