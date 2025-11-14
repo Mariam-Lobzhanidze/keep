@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Ping all my apps
         run: |
-          curl -s https://pet-adoption-backend-u907.onrender.com/health
-          curl -s https://movies-backend-0nkv.onrender.com/health
+          curl -s https://pet-adoption-backend-00tu.onrender.com/health
+          curl -s https://movies-backend-rmbg.onrender.com/health
          
